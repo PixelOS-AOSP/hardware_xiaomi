@@ -126,6 +126,8 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
             [[fallthrough]];
         case Mode::AUDIO_STREAMING_LOW_LATENCY:
             [[fallthrough]];
+        case Mode::GAME_LOADING:
+            [[fallthrough]];
         default:
             if (enabled) {
                 mHintManager->DoHint(toString(type));
