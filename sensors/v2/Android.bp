@@ -5,7 +5,7 @@
 //
 
 cc_library_shared {
-    name: "sensors.xiaomi",
+    name: "sensors.xiaomi.v2",
     defaults: ["hidl_defaults"],
     srcs: [
         "Sensor.cpp",
